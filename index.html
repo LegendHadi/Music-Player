@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/937730d7fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/music.jpg" class="song-img" />
+        <h1 id="song-name">Song Name</h1>
+        <p id="singer">Singer</p>
+        <audio src="media/Despacito.mp3" id="audio"></audio>
+        <!-- <audio controls id="song">
+          <source src="media/Despacito.mp3" type="audio/mpeg">
+        </audio> -->
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward" id="prev"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="play"></i>
+          </div>
+          <div><i class="fa-solid fa-forward" id="next"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
