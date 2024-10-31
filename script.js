@@ -65,17 +65,6 @@ audio.addEventListener("timeupdate", () => {
     }
   }
 });
-// if (audio.play()) {
-//   setInterval(() => {
-//     progress.value = audio.currentTime;
-//   }, 1000);
-// }
 progress.onchange = function () {
   audio.currentTime = progress.value;
 };
-// audio.addEventListener("ended", function () {
-//   if (playButton.classList.contains("fa-pause")) {
-//     playButton.classList.remove("fa-pause");
-//     playButton.classList.add("fa-play");
-//   }
-// });
